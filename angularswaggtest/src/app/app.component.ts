@@ -8,12 +8,13 @@ import { WeatherClient, WeatherForecast } from './data/api.service';
 })
 export class AppComponent implements OnInit {
   title = 'angularswaggtest';
+  forcasts: WeatherForecast[] = [];
 
   constructor(private weatherClient: WeatherClient) {}
 
   ngOnInit(): void {
     this.weatherClient.getWeatherForecast().subscribe((data) => {
-      console.log(data);
+      this.forcasts = data;
     });
   }
 }

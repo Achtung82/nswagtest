@@ -35,7 +35,7 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
-    "nswag": "^13.14.7",
+    "nswag": "^13.15.1",
     "typescript": "~4.4.3"
   }
 }
